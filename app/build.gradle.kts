@@ -8,16 +8,17 @@ plugins {
 
 android {
     namespace = "com.example.note"
-    compileSdk = 33
+    compileSdk = 34
 
     buildFeatures {
         dataBinding = true
+        viewBinding = true
     }
 
     defaultConfig {
         applicationId = "com.example.note"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -61,7 +62,7 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
     implementation("androidx.room:room-ktx:2.6.1")
-    //kapt("androidx.room:room-compiler:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
 
     //viewmodel
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
